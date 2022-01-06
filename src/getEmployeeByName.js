@@ -6,10 +6,11 @@ function getEmployeeByName(employeeName) {
   if (!employeeName) {
     const empty = {};
     return empty;
-  };
+  }
 
-  const funcionarios = employees.find(employee => employee.firstName === employeeName || employee.lastName === employeeName);
-  return funcionarios
+  const funcionarios = employees.find((employee) =>
+    employee.firstName === employeeName || employee.lastName === employeeName);
+  return funcionarios;
 }
 
 module.exports = getEmployeeByName;
