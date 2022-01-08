@@ -6,7 +6,7 @@ const burlId = '0e7b460e-acf4-4e17-bcb3-ee472265db83';
 const managers = [stephanieId, olaId, burlId];
 
 
-describe('4 - Crie a gestão dos funcionários de acordo com o respectivo gerente', () => {
+describe('4 - Crie a gestão d---os funcionários de acordo com o respectivo gerente', () => {
   it('retorna true se o id passado é de um gerente', () => {
     const expected = true;
     
