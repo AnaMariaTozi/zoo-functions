@@ -27,8 +27,8 @@ function countAnimals(animal) {
   if (Object.keys(animal).length === 1) {
     return numberOfAnimals.residents.length;
   }
-  const getAnimalsByASex = numberOfAnimals.residents.filter((item) => item.sex === animal.sex).length;
-  return getAnimalsByASex;
+  const animalsByASex = numberOfAnimals.residents.filter((item) => item.sex === animal.sex).length;
+  return animalsByASex;
 }
 
 console.log(countAnimals({ specie: 'bears', sex: 'female' }));
