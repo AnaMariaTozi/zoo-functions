@@ -1,11 +1,11 @@
 const { employees, species } = require('../data/zoo_data');
 
+// Referencia: muito obrigada ao colega Caio que me ajudou nessa <3
 function getOldestFromFirstSpecies(id) {
 // seu código aqui
-  // encontra o funcionário chamado no parâmetro
+
   const findEmployee = employees.find((employee) => employee.id === id);
 
-  // encontra a primeira espécie gerenciada pelo funcionario especificado
   const firstSpecie = findEmployee.responsibleFor[0];
 
   const findSpecie = species.find((animal) => animal.id === firstSpecie);
@@ -15,5 +15,5 @@ function getOldestFromFirstSpecies(id) {
   const retorno = [oldest.name, oldest.sex, oldest.age];
   return retorno;
 }
-console.log(getOldestFromFirstSpecies('56d43ba3-a5a7-40f6-8dd7-cbb05082383f'));
+
 module.exports = getOldestFromFirstSpecies;
