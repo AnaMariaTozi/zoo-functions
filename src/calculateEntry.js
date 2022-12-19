@@ -12,7 +12,6 @@ function countEntrants(entrants) {
 }
 
 function calculateEntry(entrants) {
-  // seu código aqui
   if (!entrants || entrants.length === undefined) return 0;
 
   const visitants = countEntrants(entrants);
