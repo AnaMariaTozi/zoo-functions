@@ -5,12 +5,12 @@ const locationObj = species.reduce((acc, element) => {
   if (!acc[element.location]) {
     acc[element.location] = [];
   }
-  acc[element.location].push(element.name);
+	acc[element.location].push(element.name);
+	
   return acc;
 }, {});
 
 function getAnimalMap(options) {
-  // seu código aqui
   if (!options) {
     return locationObj;
   }

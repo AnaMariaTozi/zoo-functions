@@ -1,15 +1,12 @@
 const { species } = require('../data/zoo_data');
 
 function getSpeciesByIds(...ids) {
-  // seu código aqui
   if (!ids) {
-    const empty = [];
-    return empty;
+    return [];
   }
 
-  // const espécies = species.find(specie => specie.id === ids) retorna só a primeira posição
-  const espécies = ids.map((id) => species.find((specie) => specie.id === id));
-  return espécies;
+  const specieById = ids.map((id) => species.find((specie) => specie.id === id));
+  return specieById;
 }
 
 module.exports = getSpeciesByIds;
